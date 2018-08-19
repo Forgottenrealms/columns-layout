@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化(position方法)</title>
+
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .left {
+                height: 500px;
+                margin-right: 200px;
+                background-color: blue;
+            }
+
+            .right {
+                position: absolute;
+                width: 200px;
+                height: 500px;
+                top: 0;
+                right: 0;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </body>
+</html>

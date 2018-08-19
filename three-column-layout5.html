@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化(flexbox方法)</title>
+        <style>
+            body {
+                margin: 0;
+                min-width: 500px;
+            }
+
+            .wrapper {
+                display: flex;
+            }
+            .main {
+                flex: 0 0 auto;
+                width: 200px;
+                height: 500px;
+                background-color: yellow;
+            }
+
+            .left {
+                flex: 0 0 auto;
+                width: 200px;
+                height: 500px;
+                background-color: blue;
+            }
+
+            .right {
+                flex: 1 1 auto;
+                height: 500px;
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="left">左侧固定宽度</div>
+            <div class="main">中间自适应</div>
+            <div class="right">右侧固定宽度</div>
+        </div>
+    </body>
+</html>

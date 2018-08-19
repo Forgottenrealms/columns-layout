@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化(position方法)</title>
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .left {
+                position: absolute;
+                width: 200px;
+                height: 500px;
+                top: 0;
+                left: 0;
+                background-color: blue;
+            }
+
+            .main {
+                position: absolute;
+                width: 200px;
+                height: 500px;
+                top: 0;
+                left: 200px;
+                background-color: yellow;
+            }
+
+            .right {
+                height: 500px;
+                margin-left: 400px;
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="left">左侧固定宽度</div>
+            <div class="right">右侧自适应</div>
+            <div class="main">中间固定宽度</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化(flexbox方法)</title>
+
+        <style>
+            body {
+                margin: 0;
+            }
+            
+            .wrapper {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            .wrapper .left {
+                height: 500px;
+                flex: 1 1 auto;
+                background-color: blue;
+            }
+
+            .wrapper .right {
+                width: 200px;
+                height: 500px;
+                flex: 0 0 auto;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </body>
+</html>
